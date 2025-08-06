@@ -1,10 +1,55 @@
-h1{
+h3{
     color: blue;
     background-color: aqua;
     font-size: 50px;
 }
-h2{
-    color: red;
-    background-color: beige;
-    font-size: medium;
-}
+ .t_upper {
+            text-transform: uppercase;
+        }
+
+        .t_lower {
+            text-transform: lowercase;
+        }
+
+        .t_capitalize {
+            text-transform: capitalize;
+        }
+        .t_center {
+            text-align: center;
+        }
+        .t_d_under {
+            text-decoration: underline;
+        }
+        .t_d_over{
+            text-decoration: overline;
+        }
+        .t_d_line {
+            text-decoration: line-through;
+        }
+        .t_decor {
+            text-decoration: underline overline line-through;
+        }
+        .t_indent {
+            text-indent: 163px;
+        }
+        .t_lineheight {
+            line-height: 60px;
+        }
+        .l_space {
+            letter-spacing: 40px;
+        }
+        .w_space {
+            word-spacing: 20px;
+        }
+        .t_shadow1 {
+            color: blue;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 12px 20px 8px #3b6bae;
+        }
+        .t_shadow2 {
+            color: red;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 50px 18px 6px #effb0c;
+        }
