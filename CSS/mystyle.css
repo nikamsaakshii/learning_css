@@ -128,6 +128,32 @@ h3{
             border-color: aqua brown green red;
         }
 
+        .box_model1{
+            border: 4px solid red;
+            padding: 40px;
+            margin: 100px;
+        }
+        .border_img1{
+            border: 8px double blue;
+            padding: 20px;
+            margin: 20px;
+        }
+      .box_model2{
+        border: 5px solid green;
+        padding: 50px 30px 50px 30px;
+        margin: 20px 40px 20px 40px;
+      }
+      .linear{
+        height: 400px;
+        background: linear-gradient(orange,white,green);
+      }
+      .heading1{
+        font-size: 100px;
+        text-align: center;
+        padding-top: 150px;
+        color: blue;
+      }
+
 
 
           
