@@ -72,6 +72,9 @@ h3{
         #t_color{
             color: #13b6a6;
         }
+        #t_size{
+            font-size: 400px;
+        }
         .t_shadow{
             text-shadow: 4px 4px 5px blue;
         }
