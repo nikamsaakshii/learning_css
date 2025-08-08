@@ -154,6 +154,58 @@ h3{
         color: blue;
       }
 
+       .box_model1{
+            border: 4px solid red;
+            padding: 40px;
+            margin: 100px;
+        }
+        .border_img1{
+            border: 8px double blue;
+            padding: 20px;
+            margin: 20px;
+        }
+      .box_model2{
+        border: 5px solid green;
+        padding: 50px 30px 50px 30px;
+        margin: 20px 40px 20px 40px;
+      }
+      .box_model3{
+        border: 8px double purple;
+        padding: 30px;
+        margin: 50px;
+      }
+      .linear {
+            height: 400px;
+            background: linear-gradient(orange, white, green);
+        }
+        .linear{
+            height: 200px;
+            background: linear-gradient(pink orange aqua);
+        }
+
+        .heading1 {
+            font-size: 100px;
+            text-align: center;
+            padding-top: 150px;
+            color: blue;
+        }
+
+        .text1 {
+            font-size: 400px;
+            text-align: center;
+            padding-right: 20;
+            color: aqua;
+        }
+
+        .radial {
+            height: 600px;
+            background: radial-gradient(circle, blue red green);
+        }
+        .conic{
+            height: 600px;
+            background:conic-gradient(from 90deg,purple aqua white);
+        }
+
 
 
           
