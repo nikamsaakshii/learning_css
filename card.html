@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>card flip in line</title>
 </head>
 <style>
-    .card-container {
-        display: flex;
+    .card-container1{
         direction: row;
         justify-content: center;
         align-items: center;
-        list-style: none;
         background-color: turquoise;
         margin: 10px;
         width: 200px;
@@ -20,27 +18,23 @@
         color: black;
         text-align: center;
         font-size: 30px;
-        transition: transform 5s ease-in;
         transform: rotate('180deg');
     }
-    
-
     .card-Front:hover {
          transform: rotate('180deg');
          transition: transform 5s ease-in;
     }
-
-
-       
-       
-    
+     .card-Back:hover {
+         transform: rotate('180deg');
+         transition: transform 5s ease-in;
+    }
 </style>
-
 <body>
-    <div class="card-container">
+    <div class="card-container1">
         <div class="card-Front">Front</div>
+    </div>
+    <div class="card-container2">
         <div class="card-back">Back</div>
-
     </div>
 
 </body>

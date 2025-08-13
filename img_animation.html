@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+     .swing{
+            animation: swing 1.5s ease-in-out infinite alternate;
+            transform-origin:top center ;
+            position: relative;
+        }
+        .swing img{
+            width: 200px;
+            border: 5px solid grey;
+            box-shadow:2px 3px 10px black ;
+        }
+        @keyframes swing{
+            0%{transform: rotate(7deg);}
+            100%{transform: rotate(-7deg);}
+        }
+</style>
+<body>
+    
+<div class="swing" >
+<img src="/images/butterfly.jpg" width="200px" height="200px">
+</div>
+</body>
+</html>

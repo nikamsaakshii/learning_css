@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child class </title>
+</head>
+<style>
+    ul{
+        width: 200px;
+        padding: 10px;
+        list-style-type: none;
+        font-weight: 900;
+    }
+    li{
+        padding: 10px;
+        border: 2px solid red;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    li:nth-child(odd) {
+        background-color: rgb(90, 241, 191);
+        color: black;
+    }
+    li:nth-child(even) {
+        background-color: rgb(200, 64, 159);
+        color: white;
+    }
+    li:nth-child(7) {
+        background-color: aqua;
+        color: blue;
+    }
+    /* li:first-child{
+        background-color: yellow;
+    }
+    /* li:last-child{ */
+    /* background-color: red;
+    } */
+</style>
+<body>
+    <!-- ul>li*6{Item $} -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+</body>
+</html>
