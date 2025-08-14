@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query Example</title>
+    <style>
+        @media(min-width:320px) and(max-width:767px){
+            body{
+                font-size: 20px;
+                background: black;
+
+            }
+            p{
+                display:none;
+
+            }
+            h1,h3{
+                color:yellow;
+                text-shadow: 5px 10px black;
+                
+
+            }
+            .img{
+                display: none;
+            }
+        }
+        /*from 1024px and up*/
+        @media(min-width:1824){
+            body{
+                background-color: aqua;
+                font-size: 40px;
+            }
+        }
+        /*from 850px and up.untill 950px*/
+        @media(min-width:850px){
+            body{
+                background-color: blue;
+                font-size: 20px;
+            }
+        }
+        h1{
+            color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img{
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+
+        }
+
+
+
+        
+    </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quae, praesentium voluptas voluptatum fugit atque placeat nobis eum omnis quidem? Ex explicabo repudiandae dolore molestiae aperiam iste vero suscipit? Quibusdam!</p>
+    <h1>CSS Media Query</h1>
+    <p>The background will change according to the viewport width change. </p>
+    <img class="img 1"src="/images/natur.jpg" alt="natur" width="600px"height="600px">
+
+    <h3>Smartphones-<span class="details">from 1224px and up</span>(min-width:1224px)</h3>
+    <p>ORANGE</p>
+
+
+
+
+
+
+
+    
+</body>
+</html>
