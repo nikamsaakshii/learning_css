@@ -4,38 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card flip in line</title>
+    <title>flip card with container flex<itle>
 </head>
 <style>
-    .card-container1{
-        direction: row;
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        background-color: turquoise;
-        margin: 10px;
-        width: 200px;
-        height: 150px;
-        color: black;
+        padding: 20px;
+    }
+    .car{
+        width: 300px;
+        height: 300px;
+    }
+    .card-inner{
+        position:relative;
+        width: 100%;
+        height: 100%;
         text-align: center;
-        font-size: 30px;
-        transform: rotate('180deg');
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
     }
-    .card-Front:hover {
-         transform: rotate('180deg');
-         transition: transform 5s ease-in;
+    .card:haver.card-inner{
+        transform:rotatey(180deg)
     }
-     .card-Back:hover {
-         transform: rotate('180deg');
-         transition: transform 5s ease-in;
+    .card-front,.card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        border-radius: 15px;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 20px 20px 20px 20px;
+        border-shadow:10px 10px 10px brown ;
+
     }
+    .card-front,
+    .card-back{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-front{
+        background-color: teal;
+    }
+
+
+    
 </style>
+
 <body>
-    <div class="card-container1">
-        <div class="card-Front">Front</div>
+    <div class="flex-container1">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    forn side
+                </div>
+                <div class="card-back">
+                    back side
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card-container2">
-        <div class="card-back">Back</div>
+   
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    forn side
+                </div>
+                <div class="card-back">
+                    back side
+                </div>
+            </div>
+        </div>
     </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    forn side
+                </div>
+                <div class="card-back">
+                    back side
+                </div>
+            </div>
+        </div>
+    </div>
+   
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    forn side
+                </div>
+                <div class="card-back">
+                    back side
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
