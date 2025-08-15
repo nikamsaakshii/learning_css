@@ -1,112 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flip card with container flex<itle>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Card Example</title>
+  <style>
+
+    .flex-container1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 300px;
+      height: 200px;
+      
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      border-radius: 15px;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+       border-radius: 20px 20px 20px 20px;
+       box-shadow: 10px 10px 10px brown ;
+       margin-top: 90px;
+      
+    }
+
+    .card-front img, 
+    .card-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-front {
+      background-color: teal;
+    }
+
+    .card-back {
+      background-color: tomato;
+      transform: rotateY(180deg);
+    }
+  </style>
 </head>
-<style>
-    .flex-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    .car{
-        width: 300px;
-        height: 300px;
-    }
-    .card-inner{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-    .card:haver.card-inner{
-        transform:rotatey(180deg)
-    }
-    .card-front,.card-back{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 2px solid black;
-        border-radius: 15px;
-        overflow: hidden;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        border-radius: 20px 20px 20px 20px;
-        border-shadow:10px 10px 10px brown ;
-
-    }
-    .card-front,
-    .card-back{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .card-front{
-        background-color: teal;
-    }
-
-
-    
-</style>
-
-<body>
-    <div class="flex-container1">
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    forn side
-                </div>
-                <div class="card-back">
-                    back side
-                </div>
-            </div>
+<body bgcolor="pink">
+  <div class="flex-container1">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/butterfly.jpg" alt="Clock">
+          
         </div>
-    </div>
-   
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    forn side
-                </div>
-                <div class="card-back">
-                    back side
-                </div>
-            </div>
+        <div class="card-back">
+          <img src="images/flag.png" alt="India">
         </div>
+      </div>
     </div>
     
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    forn side
-                </div>
-                <div class="card-back">
-                    back side
-                </div>
-            </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/car.png" alt="Nature">
         </div>
-    </div>
-   
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    forn side
-                </div>
-                <div class="card-back">
-                    back side
-                </div>
-            </div>
+        <div class="card-back">
+          <img src="images/young-woman-walking-wooden-path-with-green-rice-field-vang-vieng-laos.jpg" alt="Nature Back">
         </div>
+      </div>
     </div>
-
-
+    
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/natur.jpg" alt="Sunset">
+        </div>
+        <div class="card-back">
+          <img src="images/butterfly.jpg" alt="Forest">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
