@@ -127,7 +127,6 @@ h3{
             border:10px solid rgb(255, 0, 132);
             border-color: aqua brown green red;
         }
-
         .box_model1{
             border: 4px solid red;
             padding: 40px;
@@ -201,21 +200,18 @@ h3{
             height: 200px;
             background: linear-gradient(pink orange aqua);
         }
-
         .heading1 {
             font-size: 100px;
             text-align: center;
             padding-top: 150px;
             color: blue;
         }
-
         .text1 {
             font-size: 400px;
             text-align: center;
             padding-right: 20;
             color: aqua;
         }
-
         .radial {
             height: 600px;
             background: radial-gradient(circle, blue red green);
@@ -293,7 +289,6 @@ h3{
 
         }
         /* flex item */
-
         .flex_items{
             background-color: darkmagenta;
             margin: 10px;
@@ -305,7 +300,6 @@ h3{
             display: flex;
             justify-content:center ;
             align-items: center;
-
         }
         .Flex_container{
             display: flex;
@@ -327,7 +321,6 @@ h3{
             justify-content:space-evenly;
             align-items: center;
             top: 10px;
-
         }
          .Flex_container{
             display: flex;
@@ -337,24 +330,20 @@ h3{
             align-items: center;
             list-style: none;
         }
-
         h1{
             color: #3b6bae;
         }
         h1:hover{
             color: #effb0c;
-           
             text-shadow: 5px 6px 8px blanchedalmond;
         }
        img{
         border: 3px solid rgb(71, 73, 211);
-
         }
         img:hover{
             border: 3px double pink;
             box-shadow: 3px 4px 6px red;
         }
-
         input:focus{
             background-color: black;
             color: white;
@@ -365,7 +354,6 @@ h3{
         h2:active{
             color: red;
             text-transform: uppercase;
-
         }
        
 
