@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>transformation style example</title>
     <style>
         .flex-container1 {
             display: flex;
@@ -15,7 +14,6 @@
             align-items: center;
             list-style: none;
         }
-
         .box66 {
             border: 4px soild black;
             background-color: turquoise;
@@ -27,46 +25,35 @@
             font-size: 30px;
             transition: transform 1s ease-in;
         }
-
         .box1:hover {
             transform: translate(125px, 125px);
-
         }
-
         .box2:hover {
             transform: translateX(125px);
         }
-
         .box3:hover {
             transform: translateY(125px);
         }
-
         .box4:hover {
             transform: rotate(720deg);
 
         }
-
         .box5:hover {
             transform: skewX(20deg);
         }
-
         .box6:hover {
             transform: skewY(20deg);
         }
-
         .box7:hover {
             transform: skew(20deg, 20deg);
         }
-
         .box8:hover {
             transform: scale(1.4);
         }
-
         .box9:hover {
             /* transform: scale(20deg) rotate(100deg) translate(100px); */
             transform: rotate(80deg) scale(4) translateX(130px)
         }
-
         .img_wrapper {
             width: 400px;
             height: 300px;
@@ -101,7 +88,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="flex-container1">
         <div class="box66 box1">transalete x & y</div>
@@ -113,7 +99,6 @@
         <div class="box66 box7">skew</div>
         <div class="box66 box8">scale</div>
         <div class="box66 box9">multiple</div>
-        
     </div>
     </div>
     <div class="img_wrapper">
@@ -126,5 +111,4 @@
         <img src="images/car.png" class="inner-img1" alt="car">
     </div> -->
 </body>
-
 </html>
